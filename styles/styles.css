@@ -35,7 +35,7 @@ nav {
 
 nav ul {
     margin: 0%;
-    padding: 0%;
+    padding-bottom: 1rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -51,6 +51,13 @@ nav li {
 
 a {
     text-decoration: none;
+}
+
+a p {
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-align: center;
 }
 
 nav a {
@@ -95,9 +102,21 @@ footer {
     display: block;
 }
 
+
 .selectedPage {
     color: black;
     background-color: #e8a92a;
+    padding: 1rem;
+}
+
+.cta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: #1ae807;
+    color: black;
+    padding: 1%;
+    border: 1px solid black;
 }
 
 
@@ -111,4 +130,22 @@ footer {
 .welcomeSection {
     background-color: #FFFFFF;
     padding: 5%;
+}
+
+.exhibitionSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    justify-content: space-between;
+    padding: 5% 0% 4% 0%;
+}
+
+.exImage {
+    height: auto;
+    width: 100%;
+}
+
+.textCta {
+    display: flex;
+    justify-content: space-between;
 }
