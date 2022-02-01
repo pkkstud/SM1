@@ -76,6 +76,13 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    color: #e82a9f;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 1rem;
+    font-weight: 800;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -119,6 +126,11 @@ footer {
     border: 1px solid black;
 }
 
+.textWidth {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /* Home page */
 
@@ -144,9 +156,24 @@ footer {
 .exImage {
     height: auto;
     width: 100%;
+    display: block;
 }
 
 .textCta {
     display: flex;
     justify-content: space-between;
+}
+
+
+/*-----Exhibition page-----*/
+
+.exhibtionArea {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 3% 0%;
+    background-color: #FFFFFF;
+}
+
+.exhibtionText {
+    align-self: center;
 }
