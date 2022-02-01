@@ -125,6 +125,7 @@ footer {
 .imageHome {
     height: auto;
     width: 100%;
+    display: block;
 }
 
 .welcomeSection {
