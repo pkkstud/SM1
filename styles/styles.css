@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    font-family: "Open+sans", sans-serif;
 }
 
 header {
@@ -98,7 +99,6 @@ footer {
 
 
 
-
 .mainWidth {
     width: 80%;
 }
@@ -124,6 +124,8 @@ footer {
     color: black;
     padding: 1%;
     border: 1px solid black;
+    width: 8rem;
+    text-align: center;
 }
 
 .textWidth {
@@ -161,7 +163,14 @@ footer {
 
 .textCta {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+#cta2 {
+    width: 12rem;
 }
 
 
@@ -176,4 +185,41 @@ footer {
 
 .exhibtionText {
     align-self: center;
+}
+
+
+/*------Visit us--------*/
+.visitPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: space-between;
+    padding: 5% 0% 4% 0%;
+}
+
+.visitInfo {
+    background-color: #FFFFFF;
+}
+
+.visitText {
+    max-width: 80%;
+    margin: 0% auto;
+    align-self: center;
+}
+
+.hoursList {
+    display: flex;
+}
+
+.listStyle {
+    list-style: none;
+    padding-left: 0%;
+    padding-right: 10%;
+    margin: 0%;
+}
+
+.noListPadding {
+    padding: 0%;
 }
