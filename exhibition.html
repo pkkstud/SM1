@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link href="styles/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c279bd19f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,12 +17,14 @@
         <div class=mainWidth>
             <a href=index.html title="Homepage"><img src="images/csm-logo.png" alt="Community Science Museum logo"
                     class="headerLogo"></a>
+            <label for="hamburger"><i class="fa fa-bars" title="hamburger menu"></i></label>
+            <input type="checkbox" id="hamburger">
             <nav>
                 <ul>
                     <li><a href=index.html title="Homepage">Home</a></li>
-                    <li><a href=visit.html title="Plan your visit page">Visit us</a></li>
-                    <li><a href=exhibition.html title="Exhibition page" class="selectedPage">Exhibitions</a></li>
-                    <li><a href=events.html title="Special events page">Events</a></li>
+                    <li><a href=visit.html title="Visit us">Visit us</a></li>
+                    <li><a href=exhibition.html title="Exhibitions" class="selectedPage">Exhibitions</a></li>
+                    <li><a href=events.html title="Special events">Events</a></li>
                     <li><a href=about.html title="About us">About us</a></li>
                 </ul>
             </nav>
@@ -46,7 +49,7 @@
                 </div>
             </section>
 
-            <section title="The Cosmology Exhibition" class="exhibtionArea">
+            <section title="The Cosmology Exhibition" class="exhibtionArea" id="lunar">
                 <div>
                     <img src="images/lunar.jpg"
                         alt="Lunar eclipse timelaps going from fool moon to dark to full moon again" class="exImage">
@@ -62,40 +65,24 @@
                         and galaxies that can be seen and learn a bit about the early navigators who used the stars to
                         travel by.
                     </p>
-                    <p class=textWidth>
-                        Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to
-                        the
-                        latest exploration
-                        of the planets in our solar system.
-                    </p>
                 </div>
             </section>
 
-            <section title="Evolution" class="exhibtionArea">
+            <section title="Evolution" class="exhibtionArea" id="biology">
                 <div>
                     <img src="images/skeleton.jpg" alt="Skeletons of evolution of ape to human" class="exImage">
                 </div>
                 <div class="exhibtionText">
                     <h2 class=textWidth>Evolution</h2>
                     <p class=textWidth>
-                        From micro-organisms to the human body, major breakthroughs in biology are offering us unique
-                        insights into the great wonders of the tiny world.
+                        For centuries, philosophers and scientists have wrestled with the question of our origins. Where
+                        do we come from and how did we get here? Since Darwin proposed his theory of evolution we have
+                        had a framework for exploring and understanding our place in this world.
                     </p>
-                    <p class=textWidth>
-                        For many people their life expectancy is much longer and their quality of life much improved,
-                        thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the
-                        history of medicine and take a look at some major breakthroughs including the discovery of
-                        penicillin and the first heart transplant.
-                    </p>
-                    <p class=textWidth>
-                        Many of our great medicinal discoveries have come not only from the lab, but also from observing
-                        animals in the wild. Often our fellow creatures have beat us to it.
-                    </p>
-
                 </div>
             </section>
 
-            <section title="Robotics and AI" class="exhibtionArea">
+            <section title="Robotics and AI" class="exhibtionArea" id="robotics">
                 <div>
                     <img src="images/vr.jpg" alt="Girl trying VR glasses" class="exImage">
                 </div>
@@ -116,11 +103,6 @@
                 <div class="exhibtionText">
                     <h2 class=textWidth>Egology</h2>
                     <p class=textWidth>
-                        As we learn more and more of the impact humans are having on the planet, the more important it
-                        becomes that scientists explore how to create a sustainable future not just for humans but for
-                        the whole planet.
-                    </p>
-                    <p class=textWidth>
                         In our ecology section of the museum, we unpack the dangers we currently face including global
                         warming, extinction of species, and pollution. But we also focus on the positive ways we can all
                         contribute to a brighter future.
@@ -135,18 +117,10 @@
                 <div class="exhibtionText">
                     <h2 class=textWidth>Biology and medicine</h2>
                     <p class=textWidth>
-                        From micro-organisms to the human body, major breakthroughs in biology are offering us unique
-                        insights into the great wonders of the tiny world.
-                    </p>
-                    <p class=textWidth>
                         For many people their life expectancy is much longer and their quality of life much improved,
                         thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the
                         history of medicine and take a look at some major breakthroughs including the discovery of
                         penicillin and the first heart transplant.
-                    </p>
-                    <p class=textWidth>
-                        Many of our great medicinal discoveries have come not only from the lab, but also from observing
-                        animals in the wild. Often our fellow creatures have beat us to it.
                     </p>
                 </div>
             </section>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link href="styles/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c279bd19f7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,12 +17,14 @@
         <div class=mainWidth>
             <a href=index.html title="Homepage"><img src="images/csm-logo.png" alt="Community Science Museum logo"
                     class="headerLogo"></a>
+            <label for="hamburger"><i class="fa fa-bars" title="hamburger menu"></i></label>
+            <input type="checkbox" id="hamburger">
             <nav>
                 <ul>
                     <li><a href=index.html title="Homepage">Home</a></li>
-                    <li><a href=visit.html title="Plan your visit page" class="selectedPage">Visit us</a></li>
-                    <li><a href=exhibition.html title="Exhibition page">Exhibitions</a></li>
-                    <li><a href=events.html title="Special events page">Events</a></li>
+                    <li><a href=visit.html title="Visit us" class="selectedPage">Visit us</a></li>
+                    <li><a href=exhibition.html title="Exhibitions">Exhibitions</a></li>
+                    <li><a href=events.html title="Special events">Events</a></li>
                     <li><a href=about.html title="About us">About us</a></li>
                 </ul>
             </nav>
@@ -31,7 +34,7 @@
         <div class=mainWidth>
             <img src="images/visit.jpg" alt="Picture of Community Science Museum" class=imageHome>
 
-            <section title="welcome" class=welcomeSection>
+            <section title="welcome" class=welcomeSection id="visit">
                 <h1>Visit</h1>
                 <div class="textWidth">
                     <p>Come join us at the Community Science Museum where we’re committed to

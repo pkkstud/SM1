@@ -1,7 +1,11 @@
 /* Element styling */
 
+html {
+    scroll-padding-top: 8rem;
+}
+
 body {
-    background-color: #136ce8;
+    background-color: #105CC6;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -12,10 +16,11 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: 8rem;
+    height: auto;
     position: fixed;
     width: 100%;
-    background-color: #136ce8;
+    background-color: #105CC6;
+    /* 136ce8 */
 }
 
 header div {
@@ -85,17 +90,20 @@ h2 {
 }
 
 footer {
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     background-color: white;
-    color: #e8a92a;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     width: 100%;
     text-align: center;
 }
 
-
+label {
+    height: 48px;
+    display: none;
+}
 
 
 
@@ -130,9 +138,17 @@ footer {
 
 .textWidth {
     max-width: 600px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+.fa {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+}
 
 /* Home page */
 
@@ -222,4 +238,102 @@ footer {
 
 .noListPadding {
     padding: 0%;
+}
+
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1280px) {
+    h2 {
+        padding: 0;
+    }
+
+    .mainWidth {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* Hamburger menu */
+
+    nav {
+        display: none;
+        padding-left: 0%;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    nav li {
+        display: block;
+        align-self: flex-start;
+        padding: 1% 0%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 2% 0% 0% 0%;
+    }
+
+    header div {
+        justify-content: space-between;
+    }
+
+    label {
+        display: block;
+        align-self: center;
+        padding-right: 1rem;
+    }
+
+
+    .selectedPage {
+        padding: 0.5rem;
+    }
+
+    .fa {
+        display: block;
+        font-size: 3rem;
+        color: #e8a92a;
+    }
+
+    .mainWidth {
+        flex-wrap: wrap;
+    }
+
+    #hamburger:checked~nav {
+        display: block;
+    }
+
+    #hamburger:checked~main {
+        margin-top: 25rem;
+    }
+
+    /* About us */
+
+    .exhibtionArea {
+        grid-template-columns: 0.7fr 1.3fr;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .exhibtionArea {
+        grid-template-columns: 1fr;
+    }
+
+    .textWidth {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .exhibtionText {
+        justify-self: center;
+    }
+
+    .exhibtionText h2 {
+        text-align: center;
+    }
 }
