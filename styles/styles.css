@@ -1,4 +1,8 @@
-/* Element styling */
+/*
+///////
+ Element styling
+ //////
+*/
 
 html {
     scroll-padding-top: 8rem;
@@ -10,7 +14,8 @@ body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
-    font-family: "Open+sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    ;
 }
 
 header {
@@ -20,7 +25,6 @@ header {
     position: fixed;
     width: 100%;
     background-color: #105CC6;
-    /* 136ce8 */
 }
 
 header div {
@@ -51,31 +55,28 @@ nav ul {
 
 nav li {
     display: inline;
+}
+
+nav a {
     font-size: 1.5rem;
-    justify-content: space-between;
+    color: #e8a92a;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000000;
 }
 
 a {
     text-decoration: none;
 }
 
-a p {
-    font-family: "Montserrat", sans-serif;
-    color: #FFFFFF;
-    font-weight: 800;
-    text-align: center;
-}
-
-nav a {
-    font-size: 1.5rem;
-    color: #e8a92a;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+p {
+    font-family: "Open+sans", sans-serif;
 }
 
 h1 {
     color: #e82a9f;
-    font-family: "Montserrat", sans-serif;
     text-align: center;
     margin: 0%;
     font-size: 2rem;
@@ -84,7 +85,6 @@ h1 {
 
 h2 {
     color: #e82a9f;
-    font-family: "Montserrat", sans-serif;
     padding-bottom: 1rem;
     font-weight: 800;
 }
@@ -94,7 +94,6 @@ footer {
     display: flex;
     justify-content: center;
     background-color: white;
-    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -106,6 +105,11 @@ label {
 }
 
 
+/* 
+//////
+Class styling
+//////
+*/
 
 .mainWidth {
     width: 80%;
@@ -124,18 +128,6 @@ label {
     padding: 1rem;
 }
 
-.cta {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    background-color: #1ae807;
-    color: black;
-    padding: 1%;
-    border: 1px solid black;
-    width: 8rem;
-    text-align: center;
-}
-
 .textWidth {
     max-width: 600px;
     margin-right: auto;
@@ -146,11 +138,29 @@ label {
     display: none;
 }
 
+/* 
+//////
+ID styling
+//////
+ */
+
 #hamburger {
     display: none;
 }
 
-/* Home page */
+/* 
+////////
+Home page 
+////////
+*/
+
+a p {
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 .imageHome {
     height: auto;
@@ -177,6 +187,20 @@ label {
     display: block;
 }
 
+.cta {
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: #1ae807;
+    color: black;
+    padding: 1%;
+    width: 8rem;
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: #e82a9f;
+}
+
 .textCta {
     display: flex;
     flex-direction: column;
@@ -190,7 +214,7 @@ label {
 }
 
 
-/*-----Exhibition page-----*/
+/*-----Exhibition, events and about us pages-----*/
 
 .exhibtionArea {
     display: grid;
@@ -222,7 +246,6 @@ label {
 .visitText {
     max-width: 80%;
     margin: 0% auto;
-    align-self: center;
 }
 
 .hoursList {
@@ -264,13 +287,15 @@ label {
     }
 
     nav a {
-        font-size: 1.5rem;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     nav li {
         display: block;
-        align-self: flex-start;
         padding: 1% 0%;
+        width: 100%;
     }
 
     nav ul {
@@ -312,10 +337,17 @@ label {
         margin-top: 25rem;
     }
 
-    /* About us */
+    /* Exhibtion, Events and About us page*/
 
     .exhibtionArea {
         grid-template-columns: 0.7fr 1.3fr;
+    }
+
+    /* Home page */
+
+    .exhibitionSection {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
     }
 }
 
