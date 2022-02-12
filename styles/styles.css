@@ -21,7 +21,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: auto;
+    height: 8rem;
     position: fixed;
     width: 100%;
     background-color: #105CC6;
@@ -290,6 +290,10 @@ a p {
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    header {
+        height: auto;
     }
 
     nav li {
