@@ -1,6 +1,6 @@
 # Community Science Museum
 
-![image](https://user-images.githubusercontent.com/85131562/221853962-af4bdaa6-f0cb-4a4a-a054-372a76e54ef3.png)
+![image](https://user-images.githubusercontent.com/85131562/221858801-678c7ba0-236d-4e45-91ae-3942343555e2.png)
 
 
 This project is a website for the Community Science Museum. 
@@ -11,11 +11,12 @@ Community Science Museum is a semester project for the first semester at Noroff.
 
 Site architecture
 - Home
-- Contact
-- 
+- About
+- Exibition
+- Visit us
+- Events
 
 ## Built With
-
 
 - HTML
 - CSS
